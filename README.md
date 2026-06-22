@@ -40,7 +40,7 @@ Describe your fixed game in numbered steps so a reader can follow along without 
 5. User enters a guess using a string, "a"
 6. Game returns "That is not a number." and attempt not used
 7. User enters a guess of 33
-8. Game returns "Correct" and game ends
+8. Game returns "Correct" and the game ends
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 

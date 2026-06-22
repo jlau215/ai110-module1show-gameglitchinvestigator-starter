@@ -49,7 +49,7 @@ Document at least 3 bugs you found. Add rows as needed.
 - Describe at least one test you ran (manual or using pytest)  
   and what it showed you about your code.
   I did a manual test by running the app with the new code changes. It showed that my code was successful in fixing direct bugs I found earlier.
-  
+
 - Did AI help you design or understand any tests? How?
   The AI helped me understand the code more because at first the code looks confusing. After pinpointing certain lines, I asked the AI to explain what is going on. With that it helped me understand what is going on in the background.
 
@@ -72,4 +72,4 @@ Document at least 3 bugs you found. Add rows as needed.
 One thing I would do differently next time while working with AI is providing full context to the AI especially about bugs I find. Context is important in order to get the most accurate and relevant response possible. Explaining the whole process of my thinking will help a lot with getting the correct solutions.
 
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
-  This project made me think that AI generated code is not reliable. It needs to checked thoroughly before being pushed out.
+  This project made me think that AI generated code is not reliable. It needs to checked thoroughly before being pushed out which is important in the real world.
