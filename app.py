@@ -30,7 +30,7 @@ st.sidebar.caption(f"Attempts allowed: {attempt_limit}")
 if "secret" not in st.session_state:
     st.session_state.secret = random.randint(low, high)
 
-# Error with number of attempts starting at 7 instead of 8 at launch (FIXED)
+#FIXED: Error with number of attempts starting at 7 instead of 8 at launch (FIXED) using agent mode
 if "attempts" not in st.session_state:
     st.session_state.attempts = 0
 
@@ -70,7 +70,7 @@ with col2:
 with col3:
     show_hint = st.checkbox("Show hint", value=True)
 
-# Error with clicking New Game (FIXED)
+#FIXED: Error with clicking New Game won't reset attempts using agent mode
 if new_game:
     st.session_state.attempts = 0
     st.session_state.secret = random.randint(low, high)
@@ -87,7 +87,7 @@ if st.session_state.status != "playing":
         st.error("Game over. Start a new game to try again.")
     st.stop()
 
-# Error with submitting non-numbers repeatedly will cause attempts left to go lower than 0 (FIXED)
+#FIXED: Error with submitting non-numbers repeatedly will cause attempts left to go lower than 0 (FIXED) using agent mode
 if submit:
     ok, guess_int, err = parse_guess(raw_guess)
 
