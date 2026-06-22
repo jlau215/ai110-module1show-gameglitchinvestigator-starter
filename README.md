@@ -25,19 +25,22 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [X] Describe the game's purpose.
+- [X] Detail which bugs you found.
+- [X] Explain what fixes you applied.
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User enters a guess of 25
+2. Game returns "Too Low", "Go Higher"
+3. User enters a guess of 50
+4. Game returns "Too High", "Go Lower"
+5. User enters a guess using a string, "a"
+6. Game returns "That is not a number." and attempt not used
+7. User enters a guess of 33
+8. Game returns "Correct" and game ends
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
@@ -48,6 +51,13 @@ Describe your fixed game in numbered steps so a reader can follow along without 
 # pytest tests/
 # ========================= X passed in 0.XXs =========================
 ```
+
+plugins: anyio-4.14.0
+collected 11 items                                                                                                                                                                                                                                       
+
+test_game_logic.py ...........                                                                                                                                                                                                                     [100%]
+
+================================================================================================================== 11 passed in 0.04s ===================================================================================================================
 
 ## 🚀 Stretch Features
 
